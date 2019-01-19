@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Số nguyên tố</title>
+</head>
+<body>
+<script type="text/javascript">
+	var ket_qua=parseInt(prompt('Nhập vào số lượng số nguyên tố :'));
+	var dem_so=0;
+	check =true;
+	for (var x=2;dem_so<ket_qua;x++){
+		kiemtra(x);
+		if (check==true) {
+			dem_so++;
+			document.write(x+' ');
+		}
+	}
+	function kiemtra(x) {
+		
+		for (var y =2;y<x;y++) {
+			if(x%y==0) {
+				check=false;
+
+				break
+			}else{
+				check =true;
+			}
+		}
+	}
+</script>
+</body>
+</html>
